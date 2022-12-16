@@ -1,0 +1,122 @@
+/* :root{
+    --black : #2b2b2b;
+    --heading : 32px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-size: var(--heading);
+}
+
+tr > *{
+    border: 1px solid var(--black);
+}
+
+table > tr > td{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 2rem 48px;
+    background: linear-gradient(45deg,red, var(--black));
+    width: 50vw;
+    height: 50vh;
+}
+
+table{
+    position: fixed;
+    top: 0;
+}
+
+p{
+    position: sticky;
+    top: 200px;
+}
+
+h1{
+    position: absolute;
+    right: 0;
+}
+
+div{
+    position: relative;
+}
+
+div > h1{
+    top: 48px;
+    left: 20px;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+#contact-form{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+#contact-form > .heading{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#contact-form > .form{
+    width: 616px;
+    padding: 32px 48px;
+    border-radius: 8px;
+    box-shadow: 
+    0 0 16px rgba(0,0,0,0.1),
+    6px 16px 32px rgba(0,0,0,0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+}
+
+#contact-form > .form > .input-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group > label{
+    font-weight: bold;
+}
+
+.input-group > input,
+.input-group > textarea{
+    border: 1px solid blue;
+    border-radius: 8px;
+    padding: 8px 16px;
+    outline: none;
+}
+
+.input-group > textarea{
+    resize: none;
+}
+
+input[type="submit"]{
+    width: 100px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 12px 24px;
+}
