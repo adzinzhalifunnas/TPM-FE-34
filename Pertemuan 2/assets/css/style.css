@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.container{
+    padding: 1.5rem 6rem;
+}
+
+#navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+#navbar .container{
+    background-color: #D0DCFA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar .container .nav-link{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+#navbar .container .nav-link .nav-menu{
+    display: flex;
+    gap: 2rem;
+}
+
+#navbar .container .nav-link .contact-btn{
+    padding: 0.75rem 1.5rem;
+    background-color: blue;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+#navbar .container .nav-link .contact-btn > a{
+    color: white;
+}
+
+@media only screen and (max-width: 1024px){
+    #navbar .container .nav-link{
+        display: none;
+    }
+}
+
+/* .container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#box{
+    width: 200px;
+    height: 300px;
+    background-color: red;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes skewX {
+    0%{
+        transform: skew(0,0);
+    }
+    100%{
+        transform: skew(45deg,45deg);
+    }
+}
+
+.grid{
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(1fr, 3);
+    grid-gap: 8px;
+}
+
+.grid-item{
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-item::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: blue;
+    transition: 1s ease-in-out width, 1s ease-in-out height;
+}
+
+.grid-item:hover::before{
+    width: 1000px;
+    height: 1000px;
+}
+
+.grid-item:active{
+    background-color: purple;
+}
+
+.grid-item:nth-child(1){
+    grid-column: span 3;
+}
+
+input[type="text"]{
+    margin: 100px 0;
+}
+
+input[type="text"]:focus{
+    background-color: red;
+}
+
+#box3{
+    width: calc(100vw - 64px);
+    height: 100px;
+    background-color: green;
+}
+
+#box4{
+    width: max(80%, 616px);
+    height: 100px;
+    background-color: violet;
+}
+
+#box5{
+    width: min(80%, 300px);
+    height: 100px;
+    background-color: aqua;
+}
+
+#box6{
+    width: clamp(200px, 33%, 400px);
+    height: 100px;
+    background-color: red;
+}
+
+@media only screen and (max-width: 480px){
+    .grid{
+        grid-template-columns: 2fr 1fr;
+    }
+} */
