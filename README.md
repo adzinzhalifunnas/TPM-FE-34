@@ -25,6 +25,11 @@ git clone https://github.com/adzinzhalifunnas/TPM-FE-34.git
 - [Pertemuan 1](#pertemuan-1)
 - [Pertemuan 2](#pertemuan-2)
 - [Pertemuan 3](#pertemuan-3)
+- [Pertemuan 4](#pertemuan-4)
+- [Pertemuan 5](#pertemuan-5)
+
+### Daftar Tugas
+- [ ] [Mini Project](#mini-project)
 
 ### Pertemuan 1
 - [ ] Topic: TPM FE
@@ -48,6 +53,30 @@ git clone https://github.com/adzinzhalifunnas/TPM-FE-34.git
 ![Pertemuan 3a](Docs/Pertemuan-3a.png)
 ![Pertemuan 3b](Docs/Pertemuan-3b.png)
 ![Pertemuan 3c](Docs/Pertemuan-3c.png)
+
+### Pertemuan 4
+- [ ] Topic: TPM FE Pertemuan 4
+- [ ] Time: 22 December 2022, 21.20 WIB - 23.00 WIB
+- [ ] Preview Link: [https://tpm.adzinz.com/p4/index.html](https://tpm.adzinz.com/p4/index.html)
+- [ ] Preview Screenshot
+![Pertemuan 4](Docs/Pertemuan-4.png)
+
+### Pertemuan 5
+- [ ] Topic: TPM FE Pertemuan 5
+- [ ] Time: 5 January 2023, 20.20 WIB - 22.00 WIB
+- [ ] Preview Link: [https://tpm.adzinz.com/p5/index.html](https://tpm.adzinz.com/p5/index.html)
+- [ ] Preview Screenshot
+![Pertemuan 5a](Docs/Pertemuan-5a.png)
+![Pertemuan 5b](Docs/Pertemuan-5b.png)
+
+### Mini Project
+- [ ] Assignment: TPM FE Mini Project
+- [ ] Deadline: 7 January 2023, 19.20 WIB
+- [ ] Preview Link: [https://tpm.adzinz.com/mp/index.html](https://tpm.adzinz.com/mp/index.html)
+- [ ] Preview Screenshot
+![Mini Project a](Docs/Mini-Project-a.png)
+![Mini Project b](Docs/Mini-Project-b.png)
+![Mini Project c](Docs/Mini-Project-c.png)
 
 ### Connect with Me
 - [ ] [Personal Website](https://adzinz.com/)

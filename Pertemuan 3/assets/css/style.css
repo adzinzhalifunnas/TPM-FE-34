@@ -37,6 +37,7 @@ a{
     position: fixed;
     top: 0;
     z-index: 999;
+    transition: 0.5s top ease-in-out;
 }
 
 #navbar .container{
@@ -44,6 +45,17 @@ a{
     display: flex;
     justify-content: space-between;
     backdrop-filter: brightness(50%);
+}
+
+#hamburger-btn{
+    display: none;
+    width: 20px;
+    height: 20px;
+    background-color: var(--white);
+}
+
+#close-btn{
+    display: none;
 }
 
 #navbar .container .nav-menu{
@@ -68,7 +80,7 @@ a{
 
 #hero-section .container{
     min-height: 85vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./assets/hero-image.png);
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../img/hero-image.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -168,4 +180,60 @@ a{
 #service-section .container .service-content .service-card > a{
     font-weight: 600;
     color: var(--blue);
+}
+
+@media only screen and (max-width: 1280px){
+    
+}
+
+@media only screen and (max-width: 1024px){
+    .container{
+        padding: 0 4rem;
+    }
+
+    #navbar .container{
+        position: relative;
+    }
+
+    .nav-menu .nav-link{
+        flex-direction: column;
+    }
+
+    .nav-menu{
+        position: relative;
+        padding: 2rem 3rem;
+        height: 100vh;
+        background-color: var(--black);
+        position: absolute;
+        top: 0;
+        right: -300px;
+        flex-direction: column;
+        transition: 0.5s right ease-in-out;
+    }
+
+    .nav-menu.active{
+        right: 0;
+    }
+
+    #hamburger-btn, #close-btn{
+        display: block;
+    }
+
+    #close-btn{
+        position: absolute;
+        top: 24px;
+        right: 48px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+        padding: 0 3rem;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .container{
+        padding: 0 1.5rem;
+    }
 }

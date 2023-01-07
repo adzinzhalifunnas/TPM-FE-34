@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    --blue: #48CAE4;
+    --white: #FFFFFF;
+    --black: #2b2b2b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    padding: 0 6.25rem;
+}
+
+.primary-btn > a{
+    padding: 0.75rem 1.5rem;
+    border-radius: 99px;
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: 600;
+}
+
+#navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    transition: 0.5s top ease-in-out;
+}
+
+#navbar .container{
+    padding-block: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: brightness(50%);
+}
+
+#hamburger-btn{
+    display: none;
+    width: 20px;
+    height: 20px;
+    color: var(--white);
+}
+
+#hamburger-icon{
+    font-size: 2.5rem;
+}
+
+#close-btn{
+    display: none;
+}
+
+#navbar .container .nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+#navbar .container .nav-menu a{
+    color: var(--white);
+    font-weight: 500;
+}
+
+#navbar .container .nav-menu .nav-link{
+    display: flex;
+    gap: 2rem;
+}
+
+#navbar .container .nav-menu .nav-link .active{
+    color: var(--blue);
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#hero-section .container{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../img/hero-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hero-section .container .hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#hero-section .container .hero-content .heading > h1{
+    font-size: 64px;
+    color: var(--blue);
+}
+
+#hero-section .container .hero-content .heading > p{
+    font-size: 18px;
+    color: var(--white);
+}
+
+#hero-section .container .hero-image > img{
+    width: 400px;
+}
+
+#hero-section .container .hero-content .lets-talk-btn > a{
+    padding-inline: 3rem;
+}
+
+@media screen and (max-width: 768px){
+    #hero-section .container .hero-content .heading > h1{
+        font-size: 48px;
+    }
+
+    #hero-section .container .hero-content .heading > p{
+        font-size: 16px;
+    }
+
+    #hero-section .container .hero-image > img{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #navbar .container{
+        padding-block: 1rem;
+    }
+
+    #navbar .container .nav-menu{
+        display: none;
+    }
+    
+    #hamburger-btn{
+        display: block;
+    }
+
+    #hero-section .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hero-section .container .hero-content{
+        text-align: center;
+    }
+
+    #hero-section .container .hero-content .heading > h1{
+        font-size: 32px;
+    }
+
+    #hero-section .container .hero-content .heading > p{
+        font-size: 14px;
+    }
+
+    #hero-section .container .hero-image > img{
+        width: 200px;
+    }
+
+    #hero-section .container .hero-content .lets-talk-btn > a{
+        padding-inline: 2rem;
+    }
+}
+
+#about-section .container{
+    min-height: 100vh;
+    padding-block: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+#about-section .container .about-image > img{
+    width: 400px;
+}
+
+#about-section .container .about-content{
+    text-align: end;
+    color: var(--black);
+}
+
+#about-section .container .about-content > h2{
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+#about-section .container .about-content > p{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px){
+    #about-section .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about-section .container .about-image > img{
+        width: 300px;
+    }
+
+    #about-section .container .about-content{
+        text-align: center;
+    }
+
+    #about-section .container .about-content > h2{
+        font-size: 32px;
+    }
+
+    #about-section .container .about-content > p{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #about-section .container .about-image > img{
+        width: 200px;
+    }
+
+    #about-section .container .about-content > h2{
+        font-size: 24px;
+    }
+    
+    #about-section .container .about-content > p{
+        font-size: 14px;
+    }
+}
+
+#service-section .container{
+    background: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--black);
+    padding-block: 3rem;
+}
+
+#service-section .container > h2{
+    font-size: 40px;
+    margin-bottom: 32px;
+}
+
+#service-section .container .service-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 1rem;
+}
+
+#service-section .container .service-content .service-card{
+    padding: 3rem;
+    background-color: var(--white);
+    box-shadow: 0 0 16px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+}
+
+#service-section .container .service-content .service-card .service-detail{
+    height: 100%;
+}
+
+#service-section .container .service-content .service-card .service-detail > h3{
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+#service-section .container .service-content .service-card > a{
+    font-weight: 600;
+    color: var(--blue);
+}
+
+@media screen and (max-width: 768px){
+    #service-section .container .service-content{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #service-section .container > h2{
+        font-size: 32px;
+    }
+
+    #service-section .container .service-content .service-card .service-detail > h3{
+        font-size: 20px;
+    }
+}
+
+#contactus-section .container {
+    display: flex;
+    flex-direction: column;
+    padding-block: 50px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 100vh;
+}
+
+#contactus-section .container > h2{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 32px;
+}
+
+#contactus-section .container .contactus-content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}  
+
+#contactus-section .container .contactus-content .contactus-card form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px 48px;
+    background: var(--blue);
+    border-radius: 24px;
+    font-weight: 600;
+}
+
+#contactus-section .container .contactus-content .contactus-card form .name {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contactus-section .container .contactus-content .contactus-card form .gender {
+    display: flex;
+    flex-direction: row;  
+    gap: 1rem; 
+    font-weight: 500;
+    margin: 5px 15px 10px 0px;
+}
+
+form input::-webkit-input-placeholder,
+form textarea::-webkit-input-placeholder{
+    font-weight: 600;
+    font-size: bold;
+    color: var(--blue);
+}
+
+form .name > input {
+    width: 250px;
+    height: 35px;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: #CAF0F8;
+    border-radius: 12px;
+    font-weight: 400;
+    margin: 5px 15px 10px 0px;
+}
+
+form .email > input {
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: #CAF0F8;
+    border-radius: 12px;
+    margin: 5px 15px 10px 0px;
+}
+
+form .phoneNumber > input {
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: #CAF0F8;
+    border-radius: 12px;
+    margin: 5px 15px 10px 0px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+form .gender > input {
+    width: 25px;
+    height: 25px;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 35px;
+    height: 35px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    transform: scale(0);
+    border-radius: 50%;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 25px 25px var(--white);
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+input[type="radio"]:focus {
+    outline: max(2px) solid var(--white);
+    outline-offset: max(2px, 0.15em);
+}
+
+form > textarea {
+    resize: none;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: #CAF0F8;
+    border-radius: 12px;
+}
+
+form .submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form .submit > input {
+    display: flex;
+    width: 45%;
+    height: 45px;
+    padding: 15px;
+    border: 2px solid white;
+    background-color: var(--white);
+    color: #90E0EF;
+    border-radius: 24px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px 15px -5px 0px;
+}
+
+@media only screen and (max-width: 1280px){
+    #contactus-section .container .contactus-content .contactus-card form {
+        padding: 32px 32px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    #contactus-section .container .contactus-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #contactus-section .container .contactus-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #contactus-section .container > h2{
+        font-size: 32px;
+    }
+
+    #contactus-section .container .contactus-content .contactus-card form {
+        padding: 32px 24px;
+    }
+
+    #contactus-section .container .contactus-content .contactus-card form .name {
+        flex-direction: column;
+    }
+
+    #contactus-section .container .contactus-content .contactus-card form .name > input {
+        width: 100%;
+    }
+
+    #contactus-section .container .contactus-content .contactus-card form .email > input {
+        width: 100%;
+    }
+
+    #contactus-section .container .contactus-content .contactus-card form .phoneNumber > input {
+        width: 100%;
+    }
+}
+
+#footer-section .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+    background: var(--black);
+    border-radius: 40px 40px 0px 0px;
+    padding: 48px 100px;
+    gap: 32px;
+    margin-top: 150px;
+    left: 0px;
+}
+
+#footer-section .container .footer-line{
+    width: 100%;
+    height: 1px;
+    background: var(--white);
+}
+
+#footer-section .container .social-icon > a{
+    color: var(--white);
+    margin: 10px;
+    text-decoration: none;
+}
+
+#footer-section .container .social-icon > a:hover{
+    color: var(--blue);
+}
+
+#footer-section .container .footer-text{
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 1280px){
+    #footer-section .container{
+        margin-top: 200px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .container{
+        padding: 0 4rem;
+    }
+
+    #navbar .container{
+        position: relative;
+    }
+
+    .nav-menu .nav-link{
+        flex-direction: column;
+    }
+
+    .nav-menu{
+        position: relative;
+        padding: 2rem 3rem;
+        height: 100vh;
+        background-color: var(--black);
+        position: absolute;
+        top: 0;
+        right: -300px;
+        flex-direction: column;
+        transition: 0.5s right ease-in-out;
+    }
+
+    .nav-menu.active{
+        right: 0;
+    }
+
+    #hamburger-btn, #close-btn{
+        display: block;
+    }
+
+    #close-btn{
+        position: absolute;
+        top: 24px;
+        right: 48px;
+    }
+
+    #footer-section .container{
+        margin-top: 500px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+        padding: 0 3rem;
+    }
+
+    #footer-section .container{
+        margin-top: 550px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .container{
+        padding: 0 1.5rem;
+    }
+    
+    #footer-section .container{
+        margin-top: 600px;
+    }
+}
